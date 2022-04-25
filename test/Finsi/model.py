@@ -36,8 +36,8 @@ class Model:
 
         tensorboard = tf.keras.callbacks.TensorBoard(log_dir='../logs')
 
-        # learning_rate = 0.001
-        learning_rate = 0.01
+        learning_rate = 0.001
+        # learning_rate = 0.01
         self.model.compile(
             loss=tf.keras.losses.CategoricalCrossentropy(from_logits=True),
             optimizer=tf.keras.optimizers.RMSprop(learning_rate=learning_rate),
